@@ -1,13 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import HeroSection from "./Components/HeroSection";
+// import styled from "styled-components";
 
 const Home = () => {
-    return <Wrapper className="test">Home</Wrapper>;
+    const data = {
+        name: "My Store",
+    };
+    return <HeroSection myDataProps={data} />;
+    // return <Wrapper className="test">Home</Wrapper>;
 };
 
-const Wrapper = styled.section`
-    background-color: ${({ theme }) => theme.colors.bg};
-    width: 20rem;
-    height: 20rem;
-`;
+// const Wrapper = styled.section`
+//     background-color: ${({ theme }) => theme.colors.bg};
+//     width: 20rem;
+//     height: 20rem;
+// `;
+
 export default Home;
