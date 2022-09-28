@@ -9,6 +9,7 @@ import Products from "./Products";
 import Error from "./Error";
 import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
+import Header from "./Components/Header";
 
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: style
 import { GlobalStyle } from "./GlobalStyle";
@@ -22,7 +23,6 @@ function App() {
             white: "fff",
             black: "#212529",
             helper: "#8490ff",
-
             bg: "#F6F8FA",
             footer_bg: "0a1435",
             btn: "rgba(98.64,243)",
@@ -43,6 +43,7 @@ function App() {
             <ThemeProvider theme={theme}>
                 <Router>
                     <GlobalStyle />
+                    <Header />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
