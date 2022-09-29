@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import HeroSection from "./Components/HeroSection";
-// import styled from "styled-components";
+import Services from "./Components/Services";
+import Trusted from "./Components/Trusted";
 
 const Home = () => {
     const data = {
         name: "My Store",
     };
-    return <HeroSection myDataProps={data} />;
+    return (
+        <>
+            <HeroSection myDataProps={data} />
+            <Services />
+            <Trusted />
+        </>
+    );
     // return <Wrapper className="test">Home</Wrapper>;
 };
 
