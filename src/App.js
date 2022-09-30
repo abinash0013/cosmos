@@ -58,7 +58,6 @@ function App() {
                     </Routes>
                 </Router>
             </ThemeProvider>
-            <h1>Website</h1>
         </div>
     );
 }
