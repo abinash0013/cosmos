@@ -10,6 +10,7 @@ import Error from "./Error";
 import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: style
 import { GlobalStyle } from "./GlobalStyle";
@@ -56,6 +57,7 @@ function App() {
                         <Route path="/cart" element={<Cart />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
+                    <Footer />
                 </Router>
             </ThemeProvider>
         </div>
